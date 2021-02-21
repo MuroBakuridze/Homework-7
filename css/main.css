@@ -1,0 +1,94 @@
+.wall{
+	height: 100%;
+	width: 100%;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	position: absolute;
+	background: linear-gradient(60deg, 
+		#dd00f3,
+		#dd00f3,
+		#ff2400,
+		#e81d1d,
+		#e8b71d,
+		#1de840,
+		#1ddde8,
+		#2b1de8);
+	background-size: 1800% 1800%;
+	animation: rainbow 20s ease infinite;
+}
+
+.box{
+	padding-top: 20px;
+	padding-left: 10px;
+	font-size: 25px;
+	font-weight: bolder;
+	height: 130px;
+	width: 120px;
+	top: 100px;
+	left:100px;
+	border-radius: 30%;
+	position: absolute;
+	background-color: white;
+	animation-name: do-not;
+	animation-duration: 10s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: backwards;
+
+}
+.cat{
+	width: 1000px;
+/*	padding-top: 50px;
+	padding-left: 300px;*/
+	position: fixed;
+	top: -250px;
+	left: 450px;
+	z-index: 10;
+}
+
+@keyframes rainbow {
+	0%{
+		background-position: 0% 80%;
+	}
+
+	50%{
+		background-position: 100% 20%;
+	}
+
+	100%{
+		background-position: 0% 80%;
+	}
+}
+
+@keyframes do-not {
+	0%{
+		background-color: white;
+		top: 20px;
+		left: 20px;
+	}
+	25%{
+		background-color: #ff9900;
+		top: 20px;
+		left: 90%;
+	}
+	50%{
+		background-color:  #00ccff;
+		top:85%;
+		left: 90%;
+	}
+	75%{
+		background-color: #33cc33;
+		left: 20px;
+		top: 85%;
+	}
+	100%{
+		background-color: #ff3399;
+		left: 20px;
+		top: 20px;
+	}
+}
+
+

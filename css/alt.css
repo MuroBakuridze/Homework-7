@@ -1,0 +1,67 @@
+body{
+	background-color: black;
+
+}
+.cat{
+	width: 30%;
+	margin-left: 35%;
+	margin-top: 7%;
+}
+.container{
+	position: absolute;
+	top: 7%;
+	left: 35%;
+	width: 500px;
+	height: 200px;
+	padding-top: 50px;
+	padding-left: 100px;
+}
+.s{
+	font-family: 'Bubblegum Sans';
+	color: #66ccff;
+	font-size: 60px;
+	font-weight: bolder;
+	display: inline-block;
+	animation: sup 5s linear infinite;
+	animation-delay: 2s;
+	animation-timing-function: ease-in-out;
+}
+.u{
+	font-family: 'Bubblegum Sans';
+	color: #66ccff;
+	font-size: 60px;
+	font-weight: bolder;
+	display: inline-block;
+	animation: sup 5s linear infinite;
+	animation-delay: 2s;
+	animation-timing-function: ease-in-out;
+}
+.p{
+	font-family: 'Bubblegum Sans';
+	color: #66ccff;
+	font-size: 60px;
+	font-weight: bolder;
+	display: inline-block;
+	animation: sup 5s linear infinite;
+	animation-delay: 2s;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes sup {
+	0%{
+		transform-origin: 200% 50%;
+		transform: rotate(0deg);
+	}
+	50%{
+		transform-origin: 200% 50%;
+		transform: rotate(360deg);
+	}
+	50.1%{
+		transform-origin: -100% 50%;
+		transform: rotate(0deg);
+	}
+	100%{
+		transform-origin: -100% 50%;
+		transform: rotate(360deg);
+	}
+}

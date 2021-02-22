@@ -68,6 +68,107 @@ body{
 	animation-delay: 2s;
 	animation-timing-function: ease-in-out;
 }
+.left-light{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	background:	#66ccff;
+	position: absolute;
+	left: 5%;
+	top: 10%;
+	display: inline-block;
+	animation: top-lights 5s linear infinite;
+	animation-delay: 2s;
+	animation-timing-function: ease-in-out;
+}
+.face1{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 6%;
+	top: 47%;
+	display: inline-block;
+	z-index: 5;
+}
+.right-light{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	background:	#66ccff;
+	position: absolute;
+	right: 5%;
+	top: 10%;
+	display: inline-block;
+	animation: top-lights 5s linear infinite;
+	animation-delay: 2s;
+	animation-timing-function: ease-in-out;
+}
+.face2{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	right: 6.2%;
+	top: 47.5%;
+	display: inline-block;
+	z-index: 5;
+
+}
+.middle-left{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	background:	#000000;
+	position: absolute;
+	left: 5%;
+	top: 45%;
+	display: inline-block;
+	z-index: 10;
+	animation: mid-lights 5s linear infinite;
+	animation-delay: 3s;
+	animation-timing-function: ease-in-out;
+	z-index: 6;
+}
+.middle-right{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	background:	#000000;
+	position: absolute;
+	right: 5%;
+	top: 45%;
+	display: inline-block;
+	z-index: 10;
+	animation: mid-lights 5s linear infinite;
+	animation-delay: 3s;
+	animation-timing-function: ease-in-out;
+	z-index: 6;
+}
+.bot-left{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	background:	#66ccff;
+	position: absolute;
+	left: 5%;
+	bottom: 10%;
+	display: inline-block;
+	animation: bot-lights 5s linear infinite;
+	animation-delay: 2s;
+	animation-timing-function: ease-in-out;
+}
+.bot-right{
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	background:	#66ccff;
+	position: absolute;
+	right: 5%;
+	bottom: 10%;
+	display: inline-block;
+	animation: bot-lights 5s linear infinite;
+	animation-delay: 2s;
+	animation-timing-function: ease-in-out;
+}
 
 @keyframes sup {
 	0%{
@@ -115,4 +216,50 @@ body{
 	}
 }
 
+@keyframes top-lights {
+	0%{
+		background-color: #00ffff;
 
+	}
+	50%{
+		background-color: #33ccff;
+		top: 47%;
+	}
+	100%{
+		background-color: #ff00ff;
+		top: 10%;
+	}
+}
+
+@keyframes bot-lights {
+	0%{
+		background-color: #00ffff;
+
+	}
+	50%{
+		background-color: #33ccff;
+		bottom: 42%;
+	}
+	100%{
+		background-color: #ff00ff;
+		bottom: 10%;
+	}
+}
+@keyframes mid-lights{
+	0%{
+		background-color: #000000;
+
+	}
+	50%{
+		background-color: #33ccff;
+		bottom: 42%;
+		z-index: 4;
+	}
+	55%{
+		z-index: 6;
+	}
+	100%{
+		background-color: #000000;
+		bottom: 10%;
+	}
+}
